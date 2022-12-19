@@ -14,7 +14,8 @@
 
     <form id="survey-form">
       <label for="name" id="name-label">
-        Name <input id="name" type="text" placeholder="Enter your name"
+        Name
+        <input id="name" type="text" placeholder="Enter your name" required
       /></label>
       <label for="email" id="email-label"
         >Email
@@ -23,6 +24,7 @@
           name="email"
           id="email"
           placeholder="Enter your email"
+          required
       /></label>
       <label for="number" id="number-label"
         >Age (Optional)
@@ -36,23 +38,22 @@
         <option value="">other</option>
       </select>
 
+      <label for="recommend"
+        ><input type="radio" name="recommend" value="1" /> Definitely</label
+      >
+      <label for="recommend"
+        ><input type="radio" name="recommend" value="2" /> Maybe</label
+      >
+      <label for="recommend"
+        ><input type="radio" name="recommend" value="3" /> Not sure</label
+      >
+      <label for=""
+        ><input type="checkbox" value="Front-end" /> Front-end Projects</label
+      >
 
-      
-      
-      <label for="recommend"
-        ><input type="radio" name="recommend" /> Definitely</label
-      >
-      <label for="recommend"
-        ><input type="radio" name="recommend" /> Maybe</label
-      >
-      <label for="recommend"
-        ><input type="radio" name="recommend" /> Not sure</label
-      >
       <label for=""
-        ><input type="checkbox" value="Front-end" /> Front-end Projects</label>
-      
-      <label for=""
-        ><input type="checkbox" value="Back-end" /> Back-end Projects</label>
+        ><input type="checkbox" value="Back-end" /> Back-end Projects</label
+      >
 
       <label for=""
         ><input type="checkbox" value="data" /> Data Visualization
@@ -74,7 +75,6 @@
 
       <textarea name="" id="" cols="30" rows="10"></textarea>
       <button id="submit">submit</button>
-
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
