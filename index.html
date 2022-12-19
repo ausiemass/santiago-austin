@@ -13,9 +13,15 @@
     </p>
 
     <form id="survey-form">
-      <input id="name" type="text" />
-      <input type="email" name="email" id="email" />
-      <imput id="number" type="number"/> 
+      <label for="name" id="name-label">
+        Name <input id="name" type="text"
+      /></label>
+      <label for="email" id="email-label"
+        >Email <input type="email" name="email" id="email"
+      /></label>
+      <label for="number" id="number-label"
+        >Age (Optional) <input id="number" type="number" min="10" max="99" />
+      </label>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
